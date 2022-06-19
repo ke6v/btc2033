@@ -1,0 +1,85 @@
+@import url('https://fonts.google.com/specimen/Amatic+SC;display=swap');
+
+body {
+    margin: 0;
+    background-color: #000;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+/* Start screen */
+
+#enter {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    transition: .3s ease-in;
+}
+
+    #enter p {
+        margin: 0 auto;
+        font-size: 24px;
+    }
+
+/* Video layer */
+
+.dot {
+    background: transparent url(img/dot.png) repeat 0 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#video {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Name list */
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+    .socials .item {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        font-size: 22px;
+    }
+
+        .socials h1 {
+            font-size: 70px;
+            color: #fff;
+        }
+
+        .socials a:hover {
+            color: rgb(170, 170, 170);
+            transition: .1s ease-in-out;
+        }
+
+        .socials p {
+            margin: 0;
+        }
